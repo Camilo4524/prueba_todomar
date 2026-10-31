@@ -3,3 +3,116 @@
 @media(max-width:1000px){.section-pad{padding:95px 7%}.nav{gap:22px}.brand-section{gap:6%}.brand-visual img{height:430px}.model-info{padding:42px 8% 25px}.contact-section{gap:6%}.footer{padding-left:7%;padding-right:7%}}
 @media(max-width:760px){.header{height:72px;padding:0 6%}.menu-toggle{display:block;z-index:22;padding:8px}.nav{position:absolute;top:0;right:0;width:min(82vw,360px);height:100svh;background:#071b2a;display:flex;flex-direction:column;align-items:stretch;justify-content:center;padding:90px 38px 40px;gap:28px;transform:translateX(105%);transition:transform .3s}.nav--open{transform:translateX(0)}.nav>a{font-size:13px}.nav .nav-cta{justify-content:space-between;margin-top:10px}.hero{min-height:700px;height:92svh}.hero-image{background-position:58% center}.hero-shade{background:linear-gradient(90deg,rgba(4,19,30,.78),rgba(4,19,30,.2)),linear-gradient(0deg,rgba(4,19,30,.5),transparent 55%)}.hero-content{margin:35px 8% 0}.hero h1{font-size:clamp(62px,15vw,88px)}.hero-content>p{font-size:13px;max-width:340px}.hero-actions{align-items:flex-start;flex-direction:column;gap:22px}.hero-bottom{left:8%;bottom:25px}.hero-vertical{display:none}.section-pad{padding:78px 7%}.brand-section{grid-template-columns:1fr;gap:45px}.brand-copy h2,.section-heading h2,.contact-intro h2{font-size:48px}.brand-visual{margin-right:15px;padding-left:20px}.brand-visual img{height:360px}.brand-stamp{right:-20px;bottom:75px;width:90px;height:90px}.brand-stamp strong{font-size:19px}.section-heading{display:block;margin-bottom:35px}.section-heading>p{margin-top:25px}.model-showcase{grid-template-columns:1fr}.model-image-wrap{min-height:330px}.model-info{padding:35px 8% 25px}.model-info h3{font-size:38px}.model-info .button{margin-top:0}.experience{height:570px}.experience-content{margin:0 8%}.experience h2{font-size:68px}.experience-side{right:5%;bottom:25px}.values-grid{grid-template-columns:1fr;gap:35px}.values>.eyebrow{margin-bottom:35px}.value-card{padding-top:18px}.value-icon{margin:20px 0 13px}.contact-section{grid-template-columns:1fr;gap:35px}.contact-intro>p{max-width:100%}.contact-note{margin-top:25px}.form-panel{padding:32px 7%}.form-row{grid-template-columns:1fr;gap:0}.footer{padding:50px 7% 22px}.footer-main{grid-template-columns:1fr 1fr;gap:40px 25px;padding-bottom:40px}.footer-main>p{font-size:20px}.footer-bottom{flex-direction:column;gap:10px;line-height:1.6}.floating-contact{right:15px;bottom:15px;width:44px;height:44px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.section-pad,.value-card{opacity:1;transform:none}}
+
+
+/* ==========================================
+   IDENTIDAD VISUAL - ABSOLUTE YACHTS
+========================================== */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand-symbol {
+  display: block;
+  width: 58px;
+  height: 48px;
+  color: #ffffff;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.brand:hover .brand-symbol {
+  transform: translateY(-3px);
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.brand-name small {
+  display: block;
+  margin-top: 6px;
+  color: #D9A441;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+/* Logo en el pie de página */
+
+.brand--footer .brand-symbol {
+  width: 62px;
+  height: 52px;
+}
+
+.brand--footer .brand-name {
+  font-size: 19px;
+}
+
+/* Grupo de marca en el footer */
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-brand > p {
+  margin: 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+
+@media (max-width: 768px) {
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-symbol {
+    width: 45px;
+    height: 40px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .brand-name small {
+    font-size: 8px;
+    letter-spacing: 5px;
+  }
+
+  .brand--footer .brand-symbol {
+    width: 50px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-symbol {
+    width: 38px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
