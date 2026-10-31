@@ -1,59 +1,86 @@
-# Absolute Yachts — Landing Page
+# Absolute Yachts – Landing Page
 
-Propuesta académica de landing page responsive inspirada en la identidad visual de Absolute Yachts.
+Landing page desarrollada como parte de una prueba técnica para Grupo Todomar, inspirada en la identidad visual y experiencia digital de Absolute Yachts.
 
-## Tecnologías
-- React 18
+##  Demo en vivo
+
+[Ver sitio web](https://prueba-todomar.vercel.app/)
+
+##  Tecnologías utilizadas
+
+- React
 - Vite
 - JavaScript
+- HTML5
 - CSS3
-- Lucide React (iconografía)
+- Formspree para el envío de formularios
+- Lucide React para iconografía
 
-## Requisitos
-- Node.js 18 o superior
+##  Funcionalidades
+
+- Diseño responsive para dispositivos móviles, tablets y escritorio.
+- Navegación interactiva y menú adaptable.
+- Sección principal tipo Hero.
+- Presentación de la marca.
+- Catálogo interactivo de embarcaciones.
+- Filtros por categorías: Navetta, Flybridge y Coupé.
+- Galería visual de modelos.
+- Secciones de experiencia y valores de marca.
+- Formulario de contacto conectado a Formspree.
+- Validación de campos y mensajes de confirmación.
+- Favicon personalizado.
+- Animaciones y detalles visuales inspirados en el entorno náutico.
+
+## 📦 Instalación local
+
+Requisitos:
+- Node.js
 - npm
 
-## Instalación y ejecución
-1. Descomprime el proyecto.
-2. Abre la carpeta `absolute-yachts-landing` en Visual Studio Code.
-3. Abre la terminal integrada.
-4. Ejecuta:
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/Camilo4524/prueba_todomar.git
+```
+
+Ingresar a la carpeta:
+
+```bash
+cd prueba_todomar
+```
+
+Instalar dependencias:
 
 ```bash
 npm install
+```
+
+Ejecutar el proyecto:
+
+```bash
 npm run dev
 ```
 
-5. Abre la URL local que muestra Vite (normalmente http://localhost:5173).
+Abrir en el navegador la dirección local proporcionada por Vite.
 
-## Compilar para producción
+## 🏗️ Compilación para producción
 
 ```bash
 npm run build
+```
+
+Para previsualizar la compilación:
+
+```bash
 npm run preview
 ```
 
-La compilación se genera en `dist/`.
+##  Despliegue
 
-## Funcionalidades
-- Navegación por anclas y menú móvil.
-- Header que cambia al desplazarse.
-- Selector interactivo de modelos.
-- Formulario con validación HTML y confirmación visual.
-- Estados de foco, etiquetas y textos alternativos.
-- Animaciones de entrada con soporte para `prefers-reduced-motion`.
-- Metadatos SEO básicos y estructura semántica.
+El proyecto se encuentra desplegado en Vercel y conectado al repositorio de GitHub para facilitar las actualizaciones.
 
-## Consideraciones
-- El formulario está en modo demostración: valida los campos y muestra confirmación, pero no transmite datos a un servidor ni a un CRM.
-- Las imágenes se cargan desde URLs externas de Unsplash y requieren conexión a internet. Para producción se recomienda descargar imágenes autorizadas de la marca, optimizarlas y servirlas desde `public/`.
-- Los modelos y textos son una propuesta de presentación. Verificar todas las especificaciones técnicas con las fichas oficiales antes de publicar como información comercial.
-- Esta propuesta no es un sitio oficial de Absolute Yachts ni de Grupo Todomar.
+##  Consideraciones
 
-## Publicación en Vercel
-1. Sube el repositorio a GitHub.
-2. En Vercel selecciona **Add New → Project** e importa el repositorio.
-3. Framework Preset: **Vite**.
-4. Build Command: `npm run build`.
-5. Output Directory: `dist`.
-6. Pulsa **Deploy**.
+Este proyecto corresponde a una propuesta de desarrollo realizada con fines de evaluación técnica. No representa un sitio web oficial de Absolute Yachts ni de Grupo Todomar.
+
+Las especificaciones y características de los modelos deben contrastarse con las fichas oficiales antes de utilizarse como información comercial.
