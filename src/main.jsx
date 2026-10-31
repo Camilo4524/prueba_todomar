@@ -445,7 +445,7 @@ function Hero() {
     <section className="hero" id="inicio">
       <img
         className="hero-image"
-        src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=2200&q=75"
+        src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1600&q=65"
         alt=""
         aria-hidden="true"
         fetchPriority="high"
@@ -541,7 +541,7 @@ function BrandSection() {
 
       <div className="brand-visual">
         <img
-          src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1300&q=85"
+          src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1000&q=75"
           alt="Yate de lujo visto desde el exterior"
           loading="lazy"
         />
@@ -812,7 +812,7 @@ function ExperienceSection() {
   return (
     <section className="experience" id="experiencia">
       <img
-        src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=85"
+        src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=70"
         alt="Mar abierto iluminado por el sol"
         loading="lazy"
       />
