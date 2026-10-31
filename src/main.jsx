@@ -443,11 +443,15 @@ function SectionEyebrow({ children, light = false }) {
 function Hero() {
   return (
     <section className="hero" id="inicio">
-      <div
+      <img
         className="hero-image"
-        role="img"
-        aria-label="Yate de lujo navegando en mar abierto"
-      />
+        src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=2200&q=75"
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+        loading="eager"
+        decoding="async"
+        />
 
       <div className="hero-shade" />
 
@@ -638,13 +642,14 @@ function ModelsSection({ onSelectModel }) {
         <div className="model-showcase">
           <div className="model-gallery">
             <div className="model-image-wrap">
-              <img
-                key={`${activeFamily}-${activeYacht}-${activePhoto}`}
-                className="gallery-main-image"
-                src={photo.src}
-                alt={photo.alt}
+             <img
+              key={`${activeFamily}-${activeYacht}-${activePhoto}`}
+              className="gallery-main-image"
+              src={photo.src}
+              alt={photo.alt}
+              loading="lazy"
+              decoding="async"
               />
-
               <span className="model-image-index">
                 0{activePhoto + 1} / 0{yacht.images.length}
               </span>
@@ -690,7 +695,12 @@ function ModelsSection({ onSelectModel }) {
                   aria-label={`Ver fotografía ${index + 1} de ${yacht.name}`}
                   aria-pressed={activePhoto === index}
                 >
-                  <img src={item.src} alt="" loading="lazy" />
+                  <img
+                    src={item.src}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    />
                 </button>
               ))}
             </div>
