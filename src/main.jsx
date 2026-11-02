@@ -445,7 +445,7 @@ function Hero() {
     <section className="hero" id="inicio">
       <img
         className="hero-image"
-        src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1600&q=65"
+        src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1000&q=60"
         alt=""
         aria-hidden="true"
         fetchPriority="high"
