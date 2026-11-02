@@ -2438,3 +2438,65 @@ h3 {
   }
 }
 
+
+/* Ajustes responsive para la sección de filosofía */
+.brand-visual {
+  min-width: 0;
+  width: 100%;
+}
+
+.image-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.image-caption > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Tablets */
+@media (max-width: 1000px) {
+  .image-caption {
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .brand-visual {
+    width: 100%;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .image-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 7px;
+    padding: 12px 18px 0;
+    box-sizing: border-box;
+    font-size: 9px;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+  }
+
+  .image-caption > * {
+    width: 100%;
+    text-align: left;
+    overflow-wrap: break-word;
+  }
+
+  .brand-visual img {
+    max-width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+}
