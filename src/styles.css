@@ -1,9 +1,4 @@
 
-/* =====================================================
-   ABSOLUTE YACHTS
-   Diseño premium | Responsive | Tipografía mejorada
-===================================================== */
-
 :root {
   font-family: 'Manrope', sans-serif;
   color: #132634;
@@ -851,7 +846,7 @@ h3 {
 }
 
 /* =====================================================
-   PANEL PREMIUM DE LOS MODELOS
+   PANEL DE LOS MODELOS
 ===================================================== */
 
 
@@ -1316,7 +1311,7 @@ h3 {
 ===================================================== */
 
 /* =====================================================
-   CONTACTO — EXPERIENCIA PREMIUM
+   CONTACTO — EXPERIENCIA 
 ===================================================== */
 
 .contact-section {
@@ -2439,10 +2434,14 @@ h3 {
 }
 
 
-/* Ajustes responsive para la sección de filosofía */
+/* =====================================================
+   AJUSTES RESPONSIVE — SECCIÓN FILOSOFÍA
+===================================================== */
+
 .brand-visual {
-  min-width: 0;
+  position: relative;
   width: 100%;
+  min-width: 0;
 }
 
 .image-caption {
@@ -2451,52 +2450,130 @@ h3 {
   align-items: center;
   gap: 12px;
   width: 100%;
-  min-width: 0;
-  flex-wrap: wrap;
+  padding-top: 17px;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
 }
 
-.image-caption > * {
+.image-caption > span {
   min-width: 0;
-  max-width: 100%;
 }
 
 /* Tablets */
-@media (max-width: 1000px) {
-  .image-caption {
-    gap: 10px;
-    font-size: 10px;
-    letter-spacing: 1.5px;
+@media (min-width: 601px) and (max-width: 1000px) {
+  .brand-section {
+    grid-template-columns: 1fr;
+    gap: 45px;
   }
 
   .brand-visual {
-    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 25px 35px 25px;
+  }
+
+  .brand-visual img {
+    height: clamp(350px, 55vw, 470px);
+  }
+
+  .brand-stamp {
+    right: 0;
+    bottom: 75px;
+    width: 105px;
+    height: 105px;
+  }
+
+  .image-caption {
+    flex-wrap: wrap;
+    font-size: 9px;
   }
 }
 
 /* Móviles */
 @media (max-width: 600px) {
+  .brand-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 35px;
+    overflow: hidden;
+  }
+
+  .brand-visual {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 12px 25px 12px;
+  }
+
+  .brand-visual::before {
+    left: 0;
+    top: 20px;
+    width: 75%;
+    height: 75%;
+  }
+
+  .brand-visual img {
+    display: block;
+    width: 100%;
+    height: clamp(260px, 85vw, 360px);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .brand-stamp {
+    right: 5px;
+    bottom: 65px;
+    width: 88px;
+    height: 88px;
+    gap: 4px;
+  }
+
+  .brand-stamp span {
+    font-size: 6px;
+    letter-spacing: 1.2px;
+  }
+
+  .brand-stamp strong {
+    font-size: 21px;
+  }
+
   .image-caption {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: 7px;
-    padding: 12px 18px 0;
-    box-sizing: border-box;
-    font-size: 9px;
-    line-height: 1.6;
-    letter-spacing: 1.3px;
+    gap: 5px;
+    padding: 12px 5px 0;
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 1.5;
   }
 
-  .image-caption > * {
+  .image-caption > span {
     width: 100%;
-    text-align: left;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 380px) {
+  .brand-visual {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
-  .brand-visual img {
-    max-width: 100%;
-    height: 360px;
-    object-fit: cover;
+  .brand-stamp {
+    right: 2px;
+    bottom: 60px;
+    width: 78px;
+    height: 78px;
+  }
+
+  .brand-stamp strong {
+    font-size: 18px;
+  }
+
+  .image-caption {
+    font-size: 7px;
+    letter-spacing: .8px;
   }
 }
